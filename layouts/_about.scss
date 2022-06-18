@@ -1,0 +1,90 @@
+// .about {
+//     height: 100vh;
+//     background: $color2;
+//     text-align: center;
+//     font-family: Poppins;
+//     color: $color1;
+//     h2 {
+//         font-size: 3rem;
+//         margin: 0;
+//         padding-top: 70px;
+//         text-transform: uppercase;
+//         position: relative;
+//         &::after {
+//             content: "";
+//             display: block;
+//             position: absolute;
+//             bottom: -30px;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             width: 25%;
+//             height: 3px;
+//             background: $color3;
+//         }
+//     }
+//     h3 {
+//         font-size: 2rem;
+//         padding-top: 100px;
+//     }
+//     p {
+//         font-size: 1.5rem;
+//     }
+//     .about-content {
+//         display: flex;
+//         .about-left {
+//             text-align: left;
+//             width: 60%;
+//             padding: 50px;
+//         }
+//         .about-right {
+//             width: 40%;
+//             display: block;
+//             #portrait {
+//                 background: url(../img/elon.jpg);
+//                 height: 350px;
+//                 width: 350px;
+//                 border-radius: 50%;
+//                 margin-top: 180px;
+//             }
+//         }
+//     }
+// }
+.about {
+    background: $color2;
+    display: flex;
+    color: $color1;
+    font-family: Poppins;
+    height: 65vh;
+    ::selection {
+        color: $color3;
+    }
+    .about-left {
+        width: 50%;
+        #portrait {
+            transform: translate(75%, 14%);
+            border-radius: 10px;
+            box-shadow:  7px 6px 9px 0px rgba(11, 11, 11, 0.533);
+        }
+    }
+    .about-right {
+        width: 50%;
+        
+        h2 {
+            font-size: 3.5rem;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            span {
+                color: $color3;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+            width: 90%;
+            margin-bottom: 40px;
+        }
+    }
+}

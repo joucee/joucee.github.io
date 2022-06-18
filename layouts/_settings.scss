@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+$color1: rgba(8, 8, 8, 0.869);
+$color2: whitesmoke;
+$color3: rgb(117, 239, 146);
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#name {
+    color: $color3;
+}
+body {
+    overflow-x: hidden;
+    color: whitesmoke;  
+    margin: 0 auto;
+        li {
+            list-style: none;
+            cursor: pointer;
+        } 
+        
+        .btn {
+            height: 50px;
+            width: 200px;
+            font-family: Poppins;
+            font-size: 1.2rem;
+            font-weight: 700;
+            background: $color2;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            background: $color3;
+            color: $color1;
+            &:hover {
+                background: $color3;
+                color: $color2;
+            }
+        }   
+    }
+    

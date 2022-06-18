@@ -1,0 +1,48 @@
+.skills {
+    height: 35vh;
+    background: $color1;
+    font-family: Poppins;
+    font-weight: 500;
+    padding-top: 5px;
+    position: relative;
+    &::after {
+        content: "";
+            display: block;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 3px;
+            background: $color3;
+    }
+    ::selection {
+        color: $color3;
+    }
+    h3 {
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .skill-content {
+        display: flex;
+        text-align: center;
+        height: 100%;
+        padding-top: 30px;
+        .skill-card {
+            margin-top: 30px;
+            i {
+                color: $color3;
+                font-size: 3rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1rem;
+                padding: 0 30px;
+            }
+        }
+    }
+}

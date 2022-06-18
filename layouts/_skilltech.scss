@@ -1,0 +1,67 @@
+.skill-tech {
+    height: 70vh;
+    background: $color1;
+    font-family: Poppins;
+    font-weight: 500;
+    h3 {
+        padding-left: 150px;
+        padding-top: 70px;
+        margin: 0;
+        font-size: 3rem;
+    }
+    .skill-tech-content {
+        display: flex;
+        h4 {
+            font-size: 1.2rem;
+            padding-bottom: 20px;
+            padding-top: 80px;
+            padding-left: 60px;
+        }
+        .img-container{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+        
+        .skill-tech-left {
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            margin-left: 150px;
+            .container {
+                width: 80%; 
+                background-color: $color2;
+                border-radius: 15px; 
+              }
+              
+              .skillbar {
+                text-align: right; 
+                padding-top: 10px; 
+                padding-bottom: 10px; 
+                color: $color2; 
+                border-radius: 15px;
+              }
+              
+              .html {width: 90%; background-color: $color3;} 
+              .css {width: 70%; background-color: $color3;} 
+              .sass {width: 70%; background-color: $color3;} 
+              .git {width: 40%; background-color: $color3;} 
+            }
+        }
+        .skill-tech-right {
+            width: 50%;
+            margin: 0 auto;
+            p {
+                font-size: 1.2rem;
+                text-align: right;
+                padding-right: 60px;
+                padding-top: 30px;
+            }
+        }
+    }
+    .imgtech {
+        height: 100px;
+        width: 100px;
+    }

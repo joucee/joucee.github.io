@@ -1,0 +1,63 @@
+.contact {
+    background: $color1;
+    font-family: Poppins;
+    color: $color2;
+    height: 70vh;
+    position: relative;
+    h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .contact-elements {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        .contact-card {
+            background: $color2;
+            color: $color1;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 10px 10px $color3;
+            height: 300px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h4 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            i {
+                font-size: 2.5rem;
+            }
+            .social-network {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 0;
+                    padding: 0;
+                    i {
+                        transition: 0.4 ease;
+                        &:hover {
+                            color: $color3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+        transform: translateX(100%);
+    }
+}
