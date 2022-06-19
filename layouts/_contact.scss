@@ -2,7 +2,7 @@
     background: $color1;
     font-family: Poppins;
     color: $color2;
-    height: 70vh;
+    height: 65vh;
     position: relative;
     @media (max-width: 970px) {
         height: 60vh;
@@ -55,6 +55,9 @@
                     justify-content: space-around;
                     margin: 0;
                     padding: 0;
+                    a {
+                        color: $color1;
+                    }
                     i {
                         transition: 0.4 ease;
                         &:hover {
