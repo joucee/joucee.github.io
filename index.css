@@ -54,6 +54,13 @@ body .btn {
   color: rgba(8, 8, 8, 0.869);
 }
 
+@media (max-width: 1170px) {
+  body .btn {
+    font-size: 1rem;
+    width: 150px;
+  }
+}
+
 body .btn:hover {
   background: #75ef92;
   color: whitesmoke;
@@ -90,7 +97,23 @@ body .btn:hover {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
-  margin-top: -30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1170px) {
+  .header nav {
+    font-size: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 970px) {
+  .header nav {
+    display: none;
+  }
 }
 
 .header nav li {
@@ -121,26 +144,25 @@ body .btn:hover {
   margin-right: 70px;
 }
 
+@media (max-width: 970px) {
+  .header nav .nav-menu ul li {
+    margin-right: 10px;
+  }
+}
+
 .header nav .nav-doc {
   width: 20%;
+  text-align: right;
 }
 
-.header nav .nav-doc ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 30px;
+.header nav .nav-doc button {
+  width: 100px;
 }
 
-.header nav .nav-doc ul li {
-  margin: 40px;
-  padding: 10px 30px;
-  border-radius: 10px;
-  background: #75ef92;
-  color: rgba(8, 8, 8, 0.869);
+@media (max-width: 970px) {
+  .header nav .nav-doc button {
+    display: none;
+  }
 }
 
 .header .header-content {
@@ -156,13 +178,32 @@ body .btn:hover {
           align-items: center;
 }
 
+@media (max-width: 970px) {
+  .header .header-content {
+    height: 100%;
+  }
+}
+
 .header .header-content .header-content-left {
   margin: 50px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin-left: 200px;
   font-family: Poppins;
   position: relative;
+}
+
+@media (max-width: 1170px) {
+  .header .header-content .header-content-left {
+    margin-left: 80px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .header .header-content .header-content-left {
+    padding-top: 150px;
+  }
 }
 
 .header .header-content .header-content-left h1 {
@@ -173,9 +214,27 @@ body .btn:hover {
   padding-top: 50px;
 }
 
+@media (max-width: 1170px) {
+  .header .header-content .header-content-left h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .header .header-content .header-content-left h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .header .header-content .header-content-left h2 {
   font-size: 2rem;
   margin-top: 10px;
+}
+
+@media (max-width: 1170px) {
+  .header .header-content .header-content-left h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .header .header-content .header-content-left p {
@@ -186,14 +245,13 @@ body .btn:hover {
   width: 75%;
 }
 
-.header .header-content .header-content-right {
-  width: 50%;
-  height: 75vh;
-  display: block;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (max-width: 1170px) {
+  .header .header-content .header-content-left p {
+    font-size: 1rem;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .header .social-network {
@@ -206,6 +264,12 @@ body .btn:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 970px) {
+  .header .social-network {
+    display: none;
+  }
 }
 
 .header .social-network ul {
@@ -247,11 +311,18 @@ body .btn:hover {
 
 .about .about-left {
   width: 50%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 970px) {
+  .about .about-left {
+    display: none;
+  }
 }
 
 .about .about-left #portrait {
-  -webkit-transform: translate(75%, 14%);
-          transform: translate(75%, 14%);
   border-radius: 10px;
   -webkit-box-shadow: 7px 6px 9px 0px rgba(11, 11, 11, 0.533);
           box-shadow: 7px 6px 9px 0px rgba(11, 11, 11, 0.533);
@@ -261,15 +332,34 @@ body .btn:hover {
   width: 50%;
 }
 
+@media (max-width: 970px) {
+  .about .about-right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .about .about-right h2 {
   font-size: 3.5rem;
   margin-top: 50px;
   margin-bottom: 0;
 }
 
+@media (max-width: 1170px) {
+  .about .about-right h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .about .about-right h3 {
   font-size: 1.8rem;
   margin-top: 10px;
+}
+
+@media (max-width: 1170px) {
+  .about .about-right h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .about .about-right h3 span {
@@ -282,6 +372,26 @@ body .btn:hover {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1170px) {
+  .about .about-right p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1170px) {
+  .about .about-right p {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 970px) {
+  .about .about-right button {
+    display: none;
+  }
+}
+
 .skills {
   height: 35vh;
   background: rgba(8, 8, 8, 0.869);
@@ -289,6 +399,12 @@ body .btn:hover {
   font-weight: 500;
   padding-top: 5px;
   position: relative;
+}
+
+@media (max-width: 970px) {
+  .skills {
+    height: 100vh;
+  }
 }
 
 .skills::after {
@@ -302,6 +418,12 @@ body .btn:hover {
   width: 40%;
   height: 3px;
   background: #75ef92;
+}
+
+@media (max-width: 970px) {
+  .skills::after {
+    display: none;
+  }
 }
 
 .skills ::-moz-selection {
@@ -328,6 +450,12 @@ body .btn:hover {
   padding-top: 30px;
 }
 
+@media (max-width: 970px) {
+  .skills .skill-content {
+    display: block;
+  }
+}
+
 .skills .skill-content .skill-card {
   margin-top: 30px;
 }
@@ -351,6 +479,12 @@ body .btn:hover {
   background: rgba(8, 8, 8, 0.869);
   font-family: Poppins;
   font-weight: 500;
+}
+
+@media (max-width: 970px) {
+  .skill-tech {
+    display: none;
+  }
 }
 
 .skill-tech h3 {
@@ -448,7 +582,7 @@ body .btn:hover {
 }
 
 .hire {
-  height: 30vh;
+  height: 50vh;
   background: whitesmoke;
   color: rgba(8, 8, 8, 0.869);
   font-family: Poppins;
@@ -460,6 +594,12 @@ body .btn:hover {
   padding-left: 150px;
   padding-bottom: 30px;
   font-size: 2.2rem;
+}
+
+@media (max-width: 970px) {
+  .hire h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .hire .hire-content {
@@ -479,12 +619,30 @@ body .btn:hover {
   font-size: 1.2rem;
 }
 
+@media (max-width: 970px) {
+  .hire .hire-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .hire .hire-content button {
+    display: none;
+  }
+}
+
 .contact {
   background: rgba(8, 8, 8, 0.869);
   font-family: Poppins;
   color: whitesmoke;
   height: 70vh;
   position: relative;
+}
+
+@media (max-width: 970px) {
+  .contact {
+    height: 60vh;
+  }
 }
 
 .contact h3 {
@@ -495,16 +653,27 @@ body .btn:hover {
   padding-top: 80px;
 }
 
+@media (max-width: 970px) {
+  .contact h3 {
+    display: none;
+  }
+}
+
 .contact .contact-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+}
+
+@media (max-width: 970px) {
+  .contact .contact-elements {
+    display: block;
+  }
 }
 
 .contact .contact-elements .contact-card {
@@ -526,6 +695,12 @@ body .btn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 970px) {
+  .contact .contact-elements .contact-card {
+    display: none;
+  }
 }
 
 .contact .contact-elements .contact-card h4 {
@@ -559,20 +734,43 @@ body .btn:hover {
   color: #75ef92;
 }
 
-.contact .copyright {
+.contact .contact-responsive {
+  display: none;
+}
+
+@media (max-width: 970px) {
+  .contact .contact-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .contact-responsive .social-network-responsive {
+  width: 100%;
+}
+
+.contact .contact-responsive .social-network-responsive ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 100px;
 }
 
-@media screen and (max-width: 1490px) {
-  #portrait {
-    -webkit-transform: translate(25%, 14%);
-            transform: translate(25%, 14%);
-  }
+.contact .contact-responsive .social-network-responsive ul li {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=index.css.map */

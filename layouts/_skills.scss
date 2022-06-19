@@ -5,6 +5,9 @@
     font-weight: 500;
     padding-top: 5px;
     position: relative;
+    @media (max-width: 970px) {
+        height: 100vh;
+    }
     &::after {
         content: "";
             display: block;
@@ -15,6 +18,9 @@
             width: 40%;
             height: 3px;
             background: $color3;
+            @media (max-width: 970px) {
+                display: none;
+            }
     }
     ::selection {
         color: $color3;
@@ -30,6 +36,9 @@
         text-align: center;
         height: 100%;
         padding-top: 30px;
+        @media (max-width: 970px) {
+            display: block;
+        }
         .skill-card {
             margin-top: 30px;
             i {

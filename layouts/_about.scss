@@ -9,23 +9,37 @@
     }
     .about-left {
         width: 50%;
-        #portrait {
-            transform: translate(75%, 14%);
+        display: block;
+        text-align: center;
+        margin: auto;
+        @media (max-width: 970px) {
+            display: none;
+        }
+        #portrait { 
             border-radius: 10px;
             box-shadow:  7px 6px 9px 0px rgba(11, 11, 11, 0.533);
         }
     }
     .about-right {
         width: 50%;
-        
+        @media (max-width: 970px) {
+            width: 100%;
+            text-align: center;
+        }
         h2 {
             font-size: 3.5rem;
             margin-top: 50px;
             margin-bottom: 0;
+            @media (max-width: 1170px) {
+                font-size: 1.5rem;
+            }
         }
         h3 {
             font-size: 1.8rem;
             margin-top: 10px;
+            @media (max-width: 1170px) {
+                font-size: 1.2rem;
+            }
             span {
                 color: $color3;
             }
@@ -34,6 +48,19 @@
             font-size: 1.2rem;
             width: 90%;
             margin-bottom: 40px;
+            @media (max-width: 1170px) {
+                font-size: 1rem;
+            }
+            @media (max-width: 1170px) {
+                text-align: left;
+                margin-left: 20px;
+                margin-top: 60px;
+            }
+        }
+        button {
+            @media (max-width: 970px) {
+                display: none;
+            }
         }
     }
 }

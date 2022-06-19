@@ -1,5 +1,5 @@
 .hire {
-    height: 30vh;
+    height: 50vh;
     background: $color2;
     color: $color1;
     font-family: Poppins;
@@ -9,6 +9,9 @@
         padding-left: 150px;
         padding-bottom: 30px;
         font-size: 2.2rem;
+        @media (max-width: 970px) {
+            font-size: 1.2rem;
+        }
     }
     .hire-content {
         display: flex;
@@ -18,6 +21,14 @@
         p {
             width: 60%;
             font-size: 1.2rem;
+            @media (max-width: 970px) {
+                font-size: 1rem;
+            }
+        }
+        button {
+            @media (max-width: 970px) {
+                display: none;
+            }
         }
     }
 }

@@ -4,19 +4,28 @@
     color: $color2;
     height: 70vh;
     position: relative;
+    @media (max-width: 970px) {
+        height: 60vh;
+    }
     h3 {
         margin: 0;
         text-align: center;
         font-size: 2.5rem;
         padding-bottom: 80px;
         padding-top: 80px;
+        @media (max-width: 970px) {
+            display: none;
+        }
     }
     .contact-elements {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
+        @media (max-width: 970px) {
+            display: block;
+        }
         .contact-card {
             background: $color2;
             color: $color1;
@@ -28,6 +37,9 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            @media (max-width: 970px) {
+                display: none;
+            }
             h4 {
                 font-size: 1.2rem;
             }
@@ -53,9 +65,26 @@
             }
         }
     }
-    .copyright {
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 100px;
+
+    .contact-responsive {
+        display: none;
+        @media (max-width: 970px) {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .social-network-responsive {
+            width: 100%;
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    font-size: 2rem;
+                }
+            }
+            
+        }
     }
 }
