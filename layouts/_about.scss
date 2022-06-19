@@ -4,6 +4,9 @@
     color: $color1;
     font-family: Poppins;
     height: 65vh;
+    @media (max-width: 970px) {
+        height: 80vh;
+    }
     ::selection {
         color: $color3;
     }

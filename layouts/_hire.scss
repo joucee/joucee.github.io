@@ -3,6 +3,9 @@
     background: $color2;
     color: $color1;
     font-family: Poppins;
+    @media (max-width: 970px) {
+        height: 60vh;
+    }
     h3 {
         margin: 0;
         padding-top: 20px;
