@@ -32,25 +32,32 @@
             text-align: center;
         }
         h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-top: 50px;
             margin-bottom: 0;
             @media (max-width: 1170px) {
                 font-size: 1.5rem;
             }
+            @media (max-height: 800px) {
+                font-size: 3rem;
+            }
         }
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-top: 10px;
             @media (max-width: 1170px) {
                 font-size: 1.2rem;
             }
+            @media (max-height: 800px) {
+                font-size: 1.5rem;
+            }
+            
             span {
                 color: $color3;
             }
         }
         p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             width: 90%;
             margin-bottom: 40px;
             @media (max-width: 1170px) {
