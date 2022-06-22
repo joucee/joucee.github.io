@@ -3,6 +3,9 @@
     background: $color2;
     color: $color1;
     font-family: Poppins;
+    ::selection {
+        color: $color3;
+    }
     @media (max-width: 970px) {
         height: 60vh;
     }
@@ -10,7 +13,7 @@
         margin: 0;
         padding-top: 20px;
         padding-left: 150px;
-        padding-bottom: 30px;
+        
         font-size: 2.2rem;
         @media (max-width: 970px) {
             font-size: 1.2rem;

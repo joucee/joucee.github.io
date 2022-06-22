@@ -329,6 +329,8 @@ body .btn:hover {
 }
 
 .about .about-left #portrait {
+  height: 65%;
+  width: 35%;
   border-radius: 10px;
   -webkit-box-shadow: 7px 6px 9px 0px rgba(11, 11, 11, 0.533);
           box-shadow: 7px 6px 9px 0px rgba(11, 11, 11, 0.533);
@@ -346,7 +348,7 @@ body .btn:hover {
 }
 
 .about .about-right h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 50px;
   margin-bottom: 0;
 }
@@ -358,7 +360,7 @@ body .btn:hover {
 }
 
 .about .about-right h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
@@ -373,7 +375,7 @@ body .btn:hover {
 }
 
 .about .about-right p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 90%;
   margin-bottom: 40px;
 }
@@ -594,6 +596,14 @@ body .btn:hover {
   font-family: Poppins;
 }
 
+.hire ::-moz-selection {
+  color: #75ef92;
+}
+
+.hire ::selection {
+  color: #75ef92;
+}
+
 @media (max-width: 970px) {
   .hire {
     height: 60vh;
@@ -604,7 +614,6 @@ body .btn:hover {
   margin: 0;
   padding-top: 20px;
   padding-left: 150px;
-  padding-bottom: 30px;
   font-size: 2.2rem;
 }
 
@@ -663,8 +672,8 @@ body .btn:hover {
   margin: 0;
   text-align: center;
   font-size: 2.5rem;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 @media (max-width: 970px) {
