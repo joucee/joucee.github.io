@@ -99,6 +99,7 @@ body .btn:hover {
   font-size: 1.5rem;
   padding-top: 30px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 @media (max-width: 1170px) {
@@ -114,6 +115,36 @@ body .btn:hover {
   .header nav {
     display: none;
   }
+}
+
+.header nav .language {
+  position: absolute;
+  left: 0;
+  top: -40px;
+}
+
+.header nav .language ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .language ul li {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.header nav .language ul li:hover {
+  color: #75ef92;
+  background: none;
+}
+
+.header nav .language ul li a:hover {
+  color: #75ef92;
 }
 
 .header nav li {

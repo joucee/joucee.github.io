@@ -10,12 +10,18 @@
 </head>
 <body>
     
-<div class="header">
+<div class="header" id="header">
     <nav>
+        <div class="language">
+            <ul>
+                <li><p id="english">EN</p></li>
+                <li><a href="./index.html" id="fr">FR</a></li>
+            </ul>
+        </div>
         <div class="nav-menu">
             <ul>
                 <a href="#"></a><li>Home</li></a>
-                <a href="#about"><li>A propos</li></a>
+                <a href="#about"><li>About</li></a>
                 <a href="#contacts"><li>Contact</li></a>
             </ul>
         </div>
@@ -27,8 +33,8 @@
         <div class="header-content-left">
             <h1>Jocelyn <span id="name">Mercier</span></h1>
             <h2>Web Developpeur Front-end</h2>
-            <p>"Autodidacte et très investi, je souhaiterais améliorer mes compétences en travaillant au service d'une entreprise qui serait prête à me former."</p>
-            <a href="#about"><button class="btn">En savoir plus</button></a>
+            <p id="header-p">"Autodidacte et très investi, je souhaiterais améliorer mes compétences en travaillant au service d'une entreprise qui serait prête à me former."</p>
+            <a href="#about"><button class="btn" id="btn">En savoir plus</button></a>
         </div>
         <div class="header-content-right">
         </div>
@@ -47,9 +53,9 @@
             <img src="./img/portrait-lght.jpg" alt="portrait" id="portrait">
         </div>
         <div class="about-right">
-            <h2>A Propos de moi</h2>
+            <h2 id="about-h2">A Propos de moi</h2>
             <h3>Web Développeur <span>Front-end</span></h3>
-            <p>Je m'appelle Jocelyn, je suis en reconversion professionnelle dans le but de devenir Web Developpeur.<br>
+            <p id="about-p">Je m'appelle Jocelyn, je suis en reconversion professionnelle dans le but de devenir Web Developpeur.<br>
             Après avoir effectué la "Piscine" de l'école 42 à Lyon en 2021, j'ai pris goût à la programmation, je ne cesse depuis d'essayer de progresser dans ce domaine.<br>Autodidacte et très investi, je souhaiterais améliorer mes compétences en travaillant au service d'une entreprise qui serait prête à me former.</p>
             <a href="#contacts"><button class="btn">Contact</button></a>
         </div> 
@@ -58,23 +64,23 @@
     <div class="skill-content">
         <div class="skill-card">
             <i class="fa-solid fa-puzzle-piece"></i>
-            <h4>Résolution de problèmes</h4>
-            <p>Je trouve très stimulant le fait d'analyser un problème afin d'en trouver la solution</p>
+            <h4 id="solve">Résolution de problèmes</h4>
+            <p id="solve-p">Je trouve très stimulant le fait d'analyser un problème afin d'en trouver la solution</p>
         </div>
         <div class="skill-card">
             <i class="fa-solid fa-people-group"></i>
-            <h4>Travail en équipe</h4>
-            <p>Je suis à l'aise pour travailler en équipe ainsi que pour m'exprimer en public</p>
+            <h4 id="team-work">Travail en équipe</h4>
+            <p id="team-workp">Je suis à l'aise pour travailler en équipe ainsi que pour m'exprimer en public</p>
         </div>
         <div class="skill-card">
             <i class="fa-solid fa-user-ninja"></i>
-            <h4>Capacité d'apatation</h4>
-            <p>Je suis capable de m'adapter à tout type de situation ainsi que de gérer mon stress</p>
+            <h4 id="adaptability">Capacité d'apatation</h4>
+            <p id="adaptability-p">Je suis capable de m'adapter à tout type de situation ainsi que de gérer mon stress</p>
         </div>
         <div class="skill-card">
             <i class="fa-solid fa-lightbulb"></i>
-            <h4>Curiosité</h4>
-            <p>Curieux de nature, j'adore apprendre de nouvelles connaissances et compétences</p>
+            <h4 id="curiosity">Curiosité</h4>
+            <p id="curiosity-p">Curieux de nature, j'adore apprendre de nouvelles connaissances et compétences</p>
         </div>
     </div>
 </div>
@@ -100,7 +106,7 @@
             </div>
         </div>
         <div class="skill-tech-right">
-            <h4>J'aimerai apprendre :</h4>
+            <h4 id="learn">J'aimerai apprendre :</h4>
             <div class="img-container">
                 <img src="./icons/react.png" alt="react" class="imgtech">
                 <img src="./icons/js.png" alt="js" class="imgtech">
@@ -111,32 +117,32 @@
     </div>
 </div>
 <div class="hire">
-    <h3>Pourquoi moi ?</h3>
+    <h3 id="hire">Pourquoi moi ?</h3>
     <div class="hire-content">
-        <p>Je saurai faire preuve de motivation et de détermination durant ma formation.<br>Mon emploi précédent m'a conduit à avoir beaucoup de responsabilités, je suis de nature ambitieuse et je suis persuadé que je pourrais être un réel atout pour votre entreprise</p>
+        <p id="hire-p">Je saurai faire preuve de motivation et de détermination durant ma formation.<br>Mon emploi précédent m'a conduit à avoir beaucoup de responsabilités, je suis de nature ambitieuse et je suis persuadé que je pourrais être un réel atout pour votre entreprise</p>
         <a href="./img/CV2.0.pdf" target="_blank"><button class="btn">CV</button></a>
     </div>
 </div>
 <div class="contact" id="contacts">
-    <h3>Comment me contacter ?</h3>
+    <h3 id="contactme">Comment me contacter ?</h3>
     <div class="contact-elements">
         <div class="contact-card">
             <i class="fa-solid fa-phone"></i>
-            <h4>Numéro de téléphone</h4>
+            <h4 id="phone">Numéro de téléphone</h4>
             <p>0665920810</p>
         </div>
         <div class="contact-card">
             <i class="fa-solid fa-envelope"></i>
-            <h4>Adresse mail</h4>
+            <h4 id="mail">Adresse mail</h4>
             <p>mercier.jocelyn@ymail.com</p>
         </div>
         <div class="contact-card">
             <i class="fa-solid fa-location-dot"></i>
-            <h4>Adresse postale</h4>
+            <h4 id="adress">Adresse postale</h4>
             <p>25 chemin de Frontenet<br>74330 Mésigny</p>
         </div>
         <div class="contact-card">
-            <h4>Sur les réseaux</h4>
+            <h4 id="network">Sur les réseaux</h4>
             <div class="social-network">
                 <ul>
                     <a href="https://www.facebook.com/jocelyn.mercier.165" target="_blank"><li><i class="fa-brands fa-facebook"></i></li></a>
