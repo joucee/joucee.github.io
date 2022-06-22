@@ -4,12 +4,31 @@
     font-family: Montserrat;
     font-weight: 700;
     background: url(../img/bg1.jpeg)left/cover;
-    position: relative;
-   
     ::selection {
         color: $color3;
     }
-    
+    .language {  
+        margin: 0 auto;
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            li {
+                cursor: pointer;
+                margin: 10px;
+                &:hover {
+                    color: $color3;
+                    background: none;
+                }
+                a {
+                    &:hover {
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
     nav {
         display: flex;
         grid-template-columns: 10% 45% 45%;
@@ -17,7 +36,6 @@
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
-        padding-top: 30px;
         padding-bottom: 50px;
         position: relative;
         @media (max-width: 1170px) {
@@ -27,30 +45,7 @@
         @media (max-width: 970px) {
             display: none;
         }
-        .language {  
-            position: absolute;
-            left: 0;
-            top: -40px;
-            ul {
-                padding: 0;
-                display: flex;
-                align-items: center;
-                li {
-                    cursor: pointer;
-                    margin: 10px;
-                    &:hover {
-                        color: $color3;
-                        background: none;
-                    }
-                    a {
-                        &:hover {
-                            color: $color3;
-                        }
-                    }
-                }
-            }
-            
-        }
+        
         li{
             transition: 0.3s ease;
                 &:hover {
@@ -66,7 +61,7 @@
                 justify-content: flex-start;
             
                 li {
-                    padding: 10px 30px;
+                    padding: 0 30px;
                     border-radius: 10px;
                     margin-right: 70px;
                     @media (max-width: 970px) {

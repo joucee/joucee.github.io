@@ -72,7 +72,6 @@ body .btn:hover {
   font-family: Montserrat;
   font-weight: 700;
   background: url(../img/bg1.jpeg) left/cover;
-  position: relative;
 }
 
 .header ::-moz-selection {
@@ -80,6 +79,35 @@ body .btn:hover {
 }
 
 .header ::selection {
+  color: #75ef92;
+}
+
+.header .language {
+  margin: 0 auto;
+}
+
+.header .language ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .language ul li {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.header .language ul li:hover {
+  color: #75ef92;
+  background: none;
+}
+
+.header .language ul li a:hover {
   color: #75ef92;
 }
 
@@ -97,7 +125,6 @@ body .btn:hover {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
-  padding-top: 30px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -115,36 +142,6 @@ body .btn:hover {
   .header nav {
     display: none;
   }
-}
-
-.header nav .language {
-  position: absolute;
-  left: 0;
-  top: -40px;
-}
-
-.header nav .language ul {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header nav .language ul li {
-  cursor: pointer;
-  margin: 10px;
-}
-
-.header nav .language ul li:hover {
-  color: #75ef92;
-  background: none;
-}
-
-.header nav .language ul li a:hover {
-  color: #75ef92;
 }
 
 .header nav li {
@@ -170,7 +167,7 @@ body .btn:hover {
 }
 
 .header nav .nav-menu ul li {
-  padding: 10px 30px;
+  padding: 0 30px;
   border-radius: 10px;
   margin-right: 70px;
 }
@@ -380,7 +377,7 @@ body .btn:hover {
 
 .about .about-right h2 {
   font-size: 3.3rem;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 0;
 }
 
