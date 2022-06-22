@@ -11,14 +11,12 @@
         margin: 0;
         text-align: center;
         font-size: 2.5rem;
-        padding-bottom: 100px;
-        padding-top: 50px;
+        padding-bottom: 80px;
+        padding-top: 60px;
         @media (max-width: 970px) {
             display: none;
         }
-        @media (max-height: 800px) {
-            padding-bottom: 30px;
-        }
+        
         
     }
     .contact-elements {
